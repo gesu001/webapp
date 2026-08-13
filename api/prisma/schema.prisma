@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Author {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  email     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  feeds     Feed[]
+}
+
+model Feed {
+  id          String   @id @default(cuid())
+  title       String
+  summary     String?
+  content     String
+  link        String?
+  imageUrl    String?
+  category    String?
+  source      String?
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  authorId    String?
+  author      Author?  @relation(fields: [authorId], references: [id])
+}

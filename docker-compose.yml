@@ -7,6 +7,7 @@ services:
       - api
     environment:
       - NODE_ENV=development
+      - NEXT_PUBLIC_API_URL=http://api:3000
     volumes:
       - ./frontend:/app
       - /app/node_modules  # Optional: prevents overwriting node_modules in dev
@@ -24,6 +25,8 @@ services:
     volumes:
       - ./api:/app
       - /app/node_modules  # Optional: same as frontend
+    command: >
+      bash -lc "chmod +x /app/wait-for-it.sh /app/entrypoint.sh && /app/entrypoint.sh"
 
   postgres:
     image: postgres:15

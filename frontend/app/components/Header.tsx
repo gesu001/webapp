@@ -22,7 +22,7 @@ export default function Header() {
             </h1>
           </div>
           <a
-            href="https://github.com/gesu001/rss2lms"
+            href="https://github.com/gesu001/webapp"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center shrink-0 px-3 py-2 rounded-lg text-sm font-medium transition-colors text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-700 dark:hover:text-blue-300"
@@ -31,7 +31,7 @@ export default function Header() {
             GitHub
           </a>
           <a
-            href="https://github.com/gesu001/rss2lms"
+            href="https://github.com/gesu001/webapp"
             target="_blank"
             rel="noopener noreferrer"
             className="sm:hidden inline-flex items-center justify-center shrink-0 w-10 h-10 rounded-lg text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-slate-800 hover:bg-blue-100 dark:hover:bg-slate-700 transition-colors"

@@ -8,9 +8,7 @@ export default function Navigation() {
 
   const navItems = [
     { href: '/', label: 'Home' },
-    { href: '/feeds', label: 'Feeds' },
     { href: '/rss-client', label: 'RSS Client' },
-    { href: '/favorites', label: 'My Favorites' },
     { href: '/about', label: 'About' },
     { href: '/settings', label: 'Settings' },
   ];

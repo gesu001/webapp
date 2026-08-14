@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/app/context/ThemeContext";
 import { PreferencesProvider } from "@/app/context/PreferencesContext";
-import { FavoritesProvider } from "@/app/context/FavoritesContext";
 import Header from "@/app/components/Header";
 import Navigation from "@/app/components/Navigation";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
@@ -37,17 +36,15 @@ export default function RootLayout({
     >
       <body className="flex flex-col min-h-screen bg-white dark:bg-black">
         <ThemeProvider>
-          <FavoritesProvider>
-            <PreferencesProvider>
-              <Header />
-              <Navigation />
-              <Breadcrumbs />
-              <main className="flex-1 w-full bg-white dark:bg-black">
-                {children}
-              </main>
-              <Footer />
-            </PreferencesProvider>
-          </FavoritesProvider>
+          <PreferencesProvider>
+            <Header />
+            <Navigation />
+            <Breadcrumbs />
+            <main className="flex-1 w-full bg-white dark:bg-black">
+              {children}
+            </main>
+            <Footer />
+          </PreferencesProvider>
         </ThemeProvider>
       </body>
     </html>

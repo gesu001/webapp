@@ -49,12 +49,12 @@ export default function Home() {
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/feeds"
+              href="/rss-client"
               className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg 
                 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 
                 dark:focus:ring-offset-black"
             >
-              View Feeds
+              View RSS Client
             </Link>
             <Link
               href="/about"

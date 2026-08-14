@@ -24,7 +24,7 @@ export default function Footer() {
               Built with React & Next.js
             </p>
             <a
-              href="https://github.com/gesu001/rss2lms"
+              href="https://github.com/gesu001/webapp"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-1 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"

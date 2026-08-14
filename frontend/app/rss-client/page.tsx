@@ -121,7 +121,7 @@ export default function RSSClientPage() {
             </div>
             <p className="mt-3 text-gray-700 dark:text-gray-300">{health?.message ?? 'Waiting for server response...'}</p>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              Request count: {health?.requestCount ?? 0} | Total: {health?.totalRequests ?? 0}
+              Request count: {health?.requestCount ?? 0}
             </p>
           </div>
 

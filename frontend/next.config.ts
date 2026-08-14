@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const apiTarget = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4080";
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: ['54.90.185.208', 'localhost', '127.0.0.1'],
+  allowedDevOrigins: ['34.234.66.12', 'localhost', '127.0.0.1'],
   async rewrites() {
     return [
       {
